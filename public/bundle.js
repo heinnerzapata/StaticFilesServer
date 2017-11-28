@@ -85,6 +85,7 @@
 	    this.data = device.data;
 	    //title
 	    $('#modal1').find('.modal-title').html(this.title);
+	    $('#modal1').find('.modal-data').empty();
 	
 	    this.data.forEach(function (element) {
 	      $('#modal1').find('.modal-data').append('<div class="col s3">\n                                                  <div class="card white">\n                                                    <div class="card-content white-text">\n                                                      <span class="card-title">' + element + '</span>\n                                                    </div>\n                                                  </div>\n                                                </div>');
